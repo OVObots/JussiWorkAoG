@@ -21,7 +21,7 @@ const app = dialogflow({
 // Error handling
 app.catch((conv, error) => {
     console.error('Error at conv catch --> ', error);
-    conv.close('Oh dear, I encountered a glitch. Please try again after some time.');
+    conv.close('Oh dear, something went wrong. Please try again after some time.');
 });
 
 // Fallback
